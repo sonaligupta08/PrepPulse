@@ -1,0 +1,43 @@
+body {
+  background-color: #f6d7e1 !important;
+}
+
+.shop-card {
+  background-color: #917777;
+  border: 1px solid #2c2c2c;
+  transition: transform 0.3s ease;
+}
+
+.shop-card:hover {
+  transform: scale(1.03);
+  background-color: #8e6c6c;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+#footer a {
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#footer a:hover {
+  color: #5117a8 !important;
+  transform: scale(1.2);
+}
+
+#footer .footer-note {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+#footer .made-by {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #a44251;
+}

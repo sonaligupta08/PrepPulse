@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active-wear</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark text-white">
+
+    <div class="container py-5">
+        <a href="index.html" class="btn btn-danger">go back</a>
+        <div class="row g-4">
+            <h2 class="text-center">Active-wear</h2>
+            <!--card 1-->
+            <div class="col-md-6 text-center">
+                <div>
+                    <img src="https://www.wobblywalk.com/cdn/shop/products/MFWobblWW-048_5_M.jpg?crop=center&height=803&v=1747908263&width=600"
+                        alt="not-found" class="img-fluid rounded shadow" height="300" width="300">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Breathable Active Dress</h5>
+                        <p class="card-text">₹1,599</p>
+                        <button class="btn btn-outline-light add-to-cart" data-title="Breathable Active Dress"
+                            data-price="1599"
+                            data-image="https://www.wobblywalk.com/cdn/shop/products/MFWobblWW-048_5_M.jpg?crop=center&height=803&v=1747908263&width=600">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--card 2-->
+            <div class="col-md-6 text-center">
+                <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/522435/22/mod01/fnd/IND/fmt/png/Maternity-Bell-Sleeve-Women's-Training-T-Shirt"
+                    alt="not-found" class="img-fluid rounded shadow" height="300" width="300">
+
+                <div class="card-body">
+                    <h5 class="card-title"> Bell-Sleeve Training Tee</h5>
+                    <p class="card-text">₹2,499</p>
+                    <button class="btn btn-outline-light add-to-cart" data-title="Bell-Sleeve Training Tee"
+                        data-price="2499"
+                        data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/522435/22/mod01/fnd/IND/fmt/png/Maternity-Bell-Sleeve-Women's-Training-T-Shirt">Add
+                        to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!--card 3-->
+            <div class="col-md-6 text-center">
+                <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/522433/01/mod01/fnd/IND/fmt/png/Maternity-Women's-Relaxed-Fit-Training-Tank-Top"
+                    alt="not-found" class="img-fluid rounded shadow" height="300" width="300">
+
+                <div class="card-body">
+                    <h5 class="card-title">Relaxed Fit Tank Top</h5>
+                    <p class="card-text">₹1,199</p>
+                    <button class="btn btn-outline-light add-to-cart" data-title="Relaxed Fit Tank Top"
+                        data-price="1199"
+                        data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/522433/01/mod01/fnd/IND/fmt/png/Maternity-Women's-Relaxed-Fit-Training-Tank-Top">Add
+                        to Cart
+                    </button>
+                </div>
+            </div>
+
+
+            <!--card 4-->
+            <div class="col-md-6 text-center">
+                <img src="https://mb.cision.com/Public/13600/2078281/87979a5f25b7987c_800x800ar.jpg" alt="not-found"
+                    class="img-fluid rounded shadow" height="300" width="300">
+
+                <div class="card-body">
+                    <h5 class="card-title"> Stretch Fit Workout Tank</h5>
+                    <p class="card-text">₹1,899</p>
+                    <button class="btn btn-outline-light add-to-cart" data-title="Stretch Fit Workout Tank"
+                        data-price="1899"
+                        data-image="https://mb.cision.com/Public/13600/2078281/87979a5f25b7987c_800x800ar.jpg">Add to
+                        Cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cartbuttons = document.querySelectorAll('.add-to-cart');
+
+            cartbuttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const product = {
+                        title: button.getAttribute('data-title'),
+                        price: button.getAttribute('data-price'),
+                        image: button.getAttribute('data-image'),
+
+                    };
+                    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                    cart.push(product);
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    alert(`${product.title} added to cart!`);
+
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

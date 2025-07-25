@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prep-Pulse</title>
+    <!-- ✅ Google Analytics script -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand text-danger fw-bold fs-3" href="#">PrepPulse</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Maternity-wear">Maternity Wear</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">sale</a>
+                    </li>
+                    <li>
+                        <a href="cart.html" class="btn btn-outline-success position-relative"> 🛒 Cart
+                            <span id="cart-count"
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search" onclick="handleSearch(event)">
+                    <input id="searchInput" class="form-control me-2 rounded-pill" type="search" placeholder="Search"
+                        aria-label="Search" />
+                    <button class="btn btn-outline-success round" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--images section with text in between-->
+    <div class="container my-5 p-4 rounded" id="Maternity-wear">
+        <div class="row align-items-center text-center">
+            <div class="col-md-4">
+                <img src="https://m.media-amazon.com/images/I/611QZorE39L._UY1100_.jpg" class="img-fluid rounded"
+                    style="max-height: 400px;" alt="Maternity wear 1">
+            </div>
+
+            <div class="col-md-4">
+                <h2 class="fw-bold text-danger mb-3">Elegance Meets Comfort</h2>
+                <p class="text-muted fst-italic">
+                    "Because every expecting mom deserves to feel confident, radiant, and stylish at every stage."
+                </p>
+                <div class="text-center mb-4">
+                    <a href="#shopping-page" class="text-decoration-none">
+                        <button type="button" class="btn btn-danger" data-bs-toggle="popover"
+                            data-bs-title="Happy shopping !! " data-bs-trigger="hover"
+                            data-bs-content="Explore our Maternity collection now!">Shop Now</button>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2022/2/YC/HH/EH/10795204/1092mtbrdflowerd-1-500x500.jpg"
+                    class="img-fluid rounded" style="max-height: 400px;" alt="Maternity wear 2">
+            </div>
+        </div>
+    </div>
+
+    <!--shop-->
+
+    <div class="container mb-5" id="shopping-page">
+        <div class="row text-center g-4">
+            <div class="col-md-4">
+                <div class="shop-card p-3 rounded">
+                    <h2>Nursing-friendly</h2>
+                    <img src="https://m.media-amazon.com/images/I/61jOHYAHlYL._UY1100_.jpg" height="300px" width="300px"
+                        class="mb-3">
+                    <a href="Nursing.html" class="btn btn-danger rounded-pill">Explore</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="shop-card p-3 rounded">
+                    <h2>Occasion Wear</h2>
+                    <img src="https://cdn.fcglcdn.com/brainbees/images/products/583x720/19949813a.webp" height="300px"
+                        width="300px" class="mb-3">
+                    <a href="occasion.html" class="btn btn-danger rounded-pill">Explore</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="shop-card p-3 rounded">
+                    <h2>Active wear</h2>
+                    <img src="https://www.wobblywalk.com/cdn/shop/products/4_1_04417f7b-8109-4804-99fe-47523708a80e_450x450.jpg?v=1742411327"
+                        height="300px" width="300px" class="mb-3">
+                    <a href="active.html" class="btn btn-danger rounded-pill">Explore</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Top deals-->
+    <div class="container top-deals mb-5">
+        <div class="row text-center">
+            <h2 class="mb-4">Top Deals🔥</h2>
+
+            <div class="col-sm-12 col-md-6 mb-4">
+                <a href="occasion.html#Starlet" class="text-decoration-none">
+                    <div class="card p-3 h-100">
+                        <img src="https://www.pinklay.com/cdn/shop/files/Starlet_Cotton_Co-ord_Set.jpg?v=1748417198"
+                            class="img-fluid mb-3 rounded" alt="Top Deal 1">
+                        <button class="btn btn-danger rounded-pill">Shop Now</button>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="col-sm-12 col-md-6 mb-4">
+                <a href="occasion.html#dino-graphic" class="text-decoration-none">
+                    <div class="card p-3 h-100">
+                        <img src="https://www.lakshita.com/cdn/shop/files/LK4123.jpg?v=1752838443"
+                            class="img-fluid mb-3 rounded" alt="Top Deal 2">
+                        <button class="btn btn-danger rounded-pill">Shop Now</button>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <footer id="footer" style="background-color:#b88c9a;">
+        <div class="container text-center">
+            <h5 class="mb-4">you can find us at</h5>
+            <div class="d-flex justify-content-center gap-4 fs-3">
+
+                <a href="https://www.linkedin.com/in/sonaligupta2608/" target="_blank"
+                    class="text-white text-decoration-none">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/sonali_bits" target="_blank" class="text-white text-decoration-none">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="mailto:misssonali2604@gmail.com" class="text-white text-decoration-none">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <div class="footer-note">
+                &copy; 2025 All rights reserved.
+            </div>
+
+            <div class="made-by">
+                Made with ❤️ by Sonali
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
