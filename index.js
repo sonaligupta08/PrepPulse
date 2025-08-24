@@ -5,17 +5,21 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 });
 
-function handleSearch(event){
+function handleSearch(event) {
     event.preventDefault();
     const input = document.getElementById("searchInput").value.toLowerCase().trim();
 
-    if(input.includes("nursing")){
+    if (input.includes("nursing")) {
         window.location.href = "Nursing.html";
-    }else if(input.includes("occasion")){
+    } else if (input.includes("occasion")) {
         window.location.href = "occasion.html";
-    }else if(input.includes("active")){
+    } else if (input.includes("active")) {
         window.location.href = "active.html";
-    }else{
+    }
+    else if (input.includes("pregnant")) {
+        window.location.href = "Nursing.html";
+    }
+    else {
         alert("Sorry, no results found for: " + input);
     }
 }
